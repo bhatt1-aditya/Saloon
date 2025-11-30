@@ -44,16 +44,16 @@ const ScrollImage = ({ src, direction, index }) => {
       style={{ opacity: scrollProgress }}
     >
       <div
-        className="w-full max-w-4xl"
+        className="w-full h-[80vh] max-w-xl"
         style={{
           transform: getTransform(),
-          transition: 'opacity 0.1s ease-out'
+          transition: ' 0.1s ease-out'
         }}
       >
         <img
           src={src}
           alt={`Scroll image ${index + 1}`}
-          className="w-full h-[50%] rounded-lg shadow-2xl"
+          className="h-full w-full rounded-lg shadow-2xl"
         />
       </div>
     </div>
