@@ -1,0 +1,12 @@
+@keyframes moveDown {
+  0% {
+    top: 5rem;
+  }
+  100% {
+    top: 80vh;
+  }
+}
+
+.animate-moveDown {
+  animation: moveDown 2s forwards;
+}
