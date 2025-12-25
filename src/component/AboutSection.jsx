@@ -11,7 +11,7 @@ const AboutSection = () => {
             <h2 className="text-3xl font-light border-b border-black pb-2 mb-4">
               ABOUT
             </h2>
-            <div className="w-[80%] ml-auto">
+            <div className="md:w-[80%] w-full ml-auto">
               <p className="text-[17px] leading-relaxed text-gray-900 mb-6 w-full">
               We are Renasanz Salon, a popular hair salon in the heart of
               Friedrichshain, Berlin.
@@ -35,7 +35,7 @@ const AboutSection = () => {
             <h2 className="text-3xl font-light border-b border-black pb-2 mb-4">
               HOURS
             </h2>
-           <div className="w-[80%] ml-auto">
+           <div className="md:w-[80%] w-full ml-auto">
              <table className="w-full text-[16px] font-light border-collapse">
               <tbody className="">
                 <tr className="border-b border-black">
@@ -77,7 +77,7 @@ const AboutSection = () => {
           <img
             src="https://cdn.prod.website-files.com/65528f1f9be889a42e8317f9/655f77168b0ae90041bc4332_Frame%20452.webp"
             alt="Hair model"
-            className="object-cover h-[500px] w-[400px]"
+            className="object-cover md:h-[500px] h-[300px] w-[400px]"
           />
           <span className="absolute top-2 right-[10%] bg-[#e9e4dc]/80 text-black text-sm px-2 py-[2px]">
             New Blog Post
