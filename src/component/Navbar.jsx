@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BiMenu } from "react-icons/bi";
 
 const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
@@ -24,11 +25,11 @@ const Navbar = () => {
           : "bg-black/20 backdrop-blur-sm shadow-lg"
       }`}
     >
-      <div className={`relative flex items-center justify-center transition-all duration-700 ease-in-out ${
+      <div className={`relative flex items-center xl:justify-center justify-start transition-all duration-700 ease-in-out ${
         isFixed ? "py-6 px-6" : "py-6 px-6"
       }`}>
         {/* Left Section */}
-        <div className={`absolute left-6 flex items-center space-x-8 transition-colors duration-700 ${
+        <div className={`absolute left-6 xl:flex hidden items-center space-x-8 transition-colors duration-700 ${
           isFixed ? "text-black" : "text-white"
         }`}>
           <a
@@ -57,22 +58,25 @@ const Navbar = () => {
           className={`font-extrabold tracking-wider transition-all duration-700 ease-in-out cursor-pointer ${
             isFixed 
               ? "text-[#9b2c2c] text-xl hover:text-red-700" 
-              : "text-white text-6xl hover:text-gray-200"
+              : "text-white md:text-6xl text-3xl hover:text-gray-200"
           }`}
         >
           RENASANZ
         </a>
 
         {/* Right Section */}
-        <div className={`absolute right-6 transition-colors duration-700 ${
+        <div className={`absolute right-6 transition-colors  duration-700 ${
           isFixed ? "text-black" : "text-white"
         }`}>
           <a
             href="#book"
-            className="hover:text-gray-300 font-medium transition"
+            className="hover:text-gray-300 xl:flex hidden font-medium transition"
           >
             → Book Here
           </a>
+            <button className="xl:hidden block hover:text-gray-300 transition">
+  <BiMenu size={28} />
+</button>
         </div>
       </div>
     </nav>

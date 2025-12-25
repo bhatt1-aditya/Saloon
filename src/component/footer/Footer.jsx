@@ -3,16 +3,16 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="relative bg-[#7f1d1b] text-white overflow-hidden">
-      <div className="max-w-7xl mx-auto py-8 md:py-14 lg:py-20">
+      <div className="px-6 mx-auto py-8 md:py-14 lg:py-20">
         <div className="relative">
-          <div className="flex items-start justify-between">
+          <div className="flex md:flex-row flex-col md:gap-0 gap-2 items-start justify-between">
             <div className="flex-1">
               <h1 className="text-lg sm:text-xl md:text-2xl font-normal tracking-wide">
                 A CURE FOR HAIR STYLES
               </h1>
             </div>
 
-            <div className="flex-shrink-0 ml-4">
+            <div className="flex-shrink-0 md:ml-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-2 text-sm md:text-base">
                 <div className="space-y-3 flex flex-col">
                   <a href="#" className="inline-flex items-center gap-2">
@@ -47,8 +47,8 @@ const Footer = () => {
           </div>
 
           <div className="pointer-events-none">
-            <h2 className="font-serif select-none text-[6rem] sm:text-[8rem] md:text-[12rem] lg:text-[15rem] leading-[0.78] mt-4 sm:mt-6 md:mt-12 lg:mt-16 text-white translate-y-5">
-              RENASANZ
+            <h2 className="font-serif select-none text-[2rem] sm:text-[8rem] md:text-[12rem] lg:text-[17rem] leading-[0.78] mt-4 sm:mt-6 md:mt-12 lg:mt-16 text-white translate-y-5">
+              <span className="md:flex hidden">RENASANZ</span>
             </h2>
           </div>
         </div>

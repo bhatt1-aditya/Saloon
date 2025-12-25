@@ -6,16 +6,16 @@ import image4 from "../../assets/stylists/stylists4.avif";
 const Stylists = () => {
   return (
     <div className="bg-[#e9e4dc]">
-      <div className="flex flex-col gap-10 w-full py-10 px-2 md:px-6 ">
+      <div className="flex flex-col gap-10 w-full  px-6 ">
         <div className="w-full">
-          <h1 className="text-4xl tracking-[0.1em] font-normal">STYLISTS</h1>
+          <h1 className="text-3xl lg:text-5xl font-light tracking-wide mb-6">STYLISTS</h1>
           <div className="border-b border-black mt-2"></div>
         </div>
 
         {/* FULL WIDTH GRID */}
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-6 w-full">
           <div className=" lg:flex hidden"></div>
-          <div className=" p-2 md:mt-20 mt-2">
+          <div className=" md:mt-20 mt-2">
             <div className="flex flex-col md:mb-20 mb-4">
               <h1 className="text-4xl font-normal mb-1">Yuri</h1>
               <p className="text-lg text-gray-700 mb-2">Portuguese & English</p>
@@ -42,7 +42,7 @@ const Stylists = () => {
               </div>
             </div>
           </div>
-           <div className=" p-2">
+           <div className="">
             <div className="flex flex-col md:mb-20 mb-2">
               <h1 className="text-4xl font-normal mb-1">Paloma</h1>
               <p className="text-lg text-gray-700 mb-2">English & Spanish</p>
