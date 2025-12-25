@@ -3,13 +3,14 @@ import service1 from "../../assets/services/service1.png";
 import { GoArrowUpRight } from "react-icons/go";
 
 const servicesData = [
+  // ================= HAIR CUT =================
   {
     id: 1,
-    title: "Quick Cut/Tips Cut",
+    title: "Quick Cut / Tips Cut",
     category: "Hair Cut",
     price: "€35",
-    duration: "45mins",
-    desc: "• Trim up to 2 cm of hair.• Must come with washed hair.",
+    duration: "45 mins",
+    desc: "• Trim up to 2 cm of hair • Must come with washed hair",
     image: service1,
   },
   {
@@ -18,7 +19,7 @@ const servicesData = [
     category: "Hair Cut",
     price: "From €45",
     duration: "1 hour",
-    desc: "• Shape hair for new styles. • Must have short back and sides. • Includes hair wash, blow dry, and styling.",
+    desc: "• Short back and sides • Includes wash, blow dry & styling",
     image: service1,
   },
   {
@@ -27,46 +28,320 @@ const servicesData = [
     category: "Hair Cut",
     price: "From €55",
     duration: "1 hour",
-    desc: "• Shape hair for new styles. • For hair that covers the ears or longer. • Includes hair wash, blow dry, and styling.",
+    desc: "• Hair covers ears or longer • Includes wash & styling",
     image: service1,
   },
   {
     id: 4,
-    title: "Balayage Short",
-    category: "Balayage",
-    price: "€160",
-    duration: "3 hours",
-    desc: "• Balayage for hair that is shorter than the collar bone. • Includes simple toner, hair wash, blow dry, and styling. • For first-time, consultation highly recommended.",
+    title: "Kids Hair Cut",
+    category: "Hair Cut",
+    price: "€25",
+    duration: "30 mins",
+    desc: "• For children under 10 • Simple trim & style",
     image: service1,
   },
   {
     id: 5,
-    title: "Balayage Long",
-    category: "Balayage",
-    price: "€185",
-    duration: "3 hours",
-    desc: "• Balayage for hair that is between the collar bone and the mid-chest. • Includes simple toner, hair wash, blow dry, and styling. • For first-time, consultation highly recommended.",
+    title: "Men’s Classic Cut",
+    category: "Hair Cut",
+    price: "€30",
+    duration: "40 mins",
+    desc: "• Traditional men’s haircut • Clean finish",
     image: service1,
   },
+
+  // ================= BALAYAGE =================
   {
     id: 6,
-    title: "Balayage Extra",
+    title: "Balayage Short",
     category: "Balayage",
-    price: "From €210",
-    duration: "4 hours",
-    desc: "• Balayage for hair that is longer than the mid-chest.. • Includes simple toner, hair wash, blow dry, and styling.• Price is for reference. Changes from case to case. For first-time, consultation highly recommended.",
+    price: "€160",
+    duration: "3 hours",
+    desc: "• Hair shorter than collar bone • Includes toner & styling",
     image: service1,
   },
   {
     id: 7,
-    title: "Balayage Extra",
+    title: "Balayage Medium",
+    category: "Balayage",
+    price: "€175",
+    duration: "3 hours",
+    desc: "• Hair up to chest length • Includes wash & blow dry",
+    image: service1,
+  },
+  {
+    id: 8,
+    title: "Balayage Long",
+    category: "Balayage",
+    price: "€185",
+    duration: "3 hours",
+    desc: "• Hair between collar bone & mid-chest",
+    image: service1,
+  },
+  {
+    id: 9,
+    title: "Balayage Extra Long",
     category: "Balayage",
     price: "From €210",
     duration: "4 hours",
-    desc: "• Balayage for hair that is longer than the mid-chest.. • Includes simple toner, hair wash, blow dry, and styling.• Price is for reference. Changes from case to case. For first-time, consultation highly recommended.",
+    desc: "• Very long hair • Consultation recommended",
+    image: service1,
+  },
+  {
+    id: 10,
+    title: "Balayage Touch Up",
+    category: "Balayage",
+    price: "From €120",
+    duration: "2.5 hours",
+    desc: "• Refresh previous balayage • Includes toner",
+    image: service1,
+  },
+
+  // ================= COLOR =================
+  {
+    id: 11,
+    title: "Root Color",
+    category: "Color",
+    price: "€60",
+    duration: "1.5 hours",
+    desc: "• Covers root regrowth • Single color",
+    image: service1,
+  },
+  {
+    id: 12,
+    title: "Full Hair Color",
+    category: "Color",
+    price: "From €90",
+    duration: "2 hours",
+    desc: "• Full length color • Includes wash & dry",
+    image: service1,
+  },
+  {
+    id: 13,
+    title: "Highlights Partial",
+    category: "Color",
+    price: "From €95",
+    duration: "2 hours",
+    desc: "• Partial highlights • Natural finish",
+    image: service1,
+  },
+  {
+    id: 14,
+    title: "Highlights Full",
+    category: "Color",
+    price: "From €130",
+    duration: "3 hours",
+    desc: "• Full head highlights • Includes toner",
+    image: service1,
+  },
+  {
+    id: 15,
+    title: "Color Correction",
+    category: "Color",
+    price: "Consultation",
+    duration: "Varies",
+    desc: "• Fix uneven or damaged color • Consultation required",
+    image: service1,
+  },
+
+  // ================= STYLING =================
+  {
+    id: 16,
+    title: "Blow Dry Short",
+    category: "Styling",
+    price: "€30",
+    duration: "30 mins",
+    desc: "• Short hair styling • Smooth finish",
+    image: service1,
+  },
+  {
+    id: 17,
+    title: "Blow Dry Long",
+    category: "Styling",
+    price: "€40",
+    duration: "45 mins",
+    desc: "• Long hair styling • Volume & finish",
+    image: service1,
+  },
+  {
+    id: 18,
+    title: "Hair Styling (Event)",
+    category: "Styling",
+    price: "From €55",
+    duration: "1 hour",
+    desc: "• Party or event styling",
+    image: service1,
+  },
+  {
+    id: 19,
+    title: "Bridal Hair Trial",
+    category: "Styling",
+    price: "€80",
+    duration: "1.5 hours",
+    desc: "• Bridal hairstyle consultation & trial",
+    image: service1,
+  },
+
+  // ================= TREATMENT =================
+  {
+    id: 20,
+    title: "Deep Conditioning",
+    category: "Treatment",
+    price: "€35",
+    duration: "30 mins",
+    desc: "• Moisturizing treatment • Improves shine",
+    image: service1,
+  },
+  {
+    id: 21,
+    title: "Keratin Treatment",
+    category: "Treatment",
+    price: "From €150",
+    duration: "2.5 hours",
+    desc: "• Smooth & frizz-free hair",
+    image: service1,
+  },
+  {
+    id: 22,
+    title: "Hair Spa",
+    category: "Treatment",
+    price: "€50",
+    duration: "45 mins",
+    desc: "• Relaxing scalp & hair therapy",
+    image: service1,
+  },
+  {
+    id: 23,
+    title: "Olaplex Treatment",
+    category: "Treatment",
+    price: "€45",
+    duration: "30 mins",
+    desc: "• Repairs damaged hair bonds",
+    image: service1,
+  },
+
+  // ================= ADD-ONS =================
+  {
+    id: 24,
+    title: "Fringe Trim",
+    category: "Add On",
+    price: "€10",
+    duration: "10 mins",
+    desc: "• Bangs / fringe trim only",
+    image: service1,
+  },
+  {
+    id: 25,
+    title: "Hair Wash Only",
+    category: "Add On",
+    price: "€15",
+    duration: "15 mins",
+    desc: "• Shampoo & conditioning",
+    image: service1,
+  },
+  {
+    id: 26,
+    title: "Scalp Massage",
+    category: "Add On",
+    price: "€20",
+    duration: "15 mins",
+    desc: "• Relaxing scalp massage",
+    image: service1,
+  },
+  {
+    id: 27,
+    title: "Toner Add-On",
+    category: "Add On",
+    price: "€25",
+    duration: "20 mins",
+    desc: "• Enhance or neutralize color",
+    image: service1,
+  },
+
+  // ================= PREMIUM =================
+  {
+    id: 28,
+    title: "Premium Hair Makeover",
+    category: "Premium",
+    price: "From €250",
+    duration: "4 hours",
+    desc: "• Cut, color, treatment & styling",
+    image: service1,
+  },
+  {
+    id: 29,
+    title: "Luxury Hair Spa",
+    category: "Premium",
+    price: "€90",
+    duration: "1.5 hours",
+    desc: "• Premium products & massage",
+    image: service1,
+  },
+  {
+    id: 30,
+    title: "VIP Styling Session",
+    category: "Premium",
+    price: "€120",
+    duration: "2 hours",
+    desc: "• Personalized styling & care",
+    image: service1,
+  },
+  {
+    id: 31,
+    title: "Bridal Full Package",
+    category: "Premium",
+    price: "From €350",
+    duration: "5 hours",
+    desc: "• Bridal hair, trial & styling",
+    image: service1,
+  },
+  {
+    id: 32,
+    title: "Photoshoot Styling",
+    category: "Premium",
+    price: "€150",
+    duration: "2.5 hours",
+    desc: "• Professional shoot-ready styling",
+    image: service1,
+  },
+  {
+    id: 33,
+    title: "Hair Detox Treatment",
+    category: "Treatment",
+    price: "€60",
+    duration: "45 mins",
+    desc: "• Removes buildup & toxins",
+    image: service1,
+  },
+  {
+    id: 34,
+    title: "Express Styling",
+    category: "Styling",
+    price: "€25",
+    duration: "20 mins",
+    desc: "• Quick styling for busy days",
+    image: service1,
+  },
+  {
+    id: 35,
+    title: "Senior Citizen Cut",
+    category: "Hair Cut",
+    price: "€28",
+    duration: "40 mins",
+    desc: "• Comfortable & classic haircut",
+    image: service1,
+  },
+  {
+    id: 36,
+    title: "Hair Consultation",
+    category: "Consultation",
+    price: "Free",
+    duration: "20 mins",
+    desc: "• Discuss hair goals & options",
     image: service1,
   },
 ];
+
 
 const Services = () => {
   const [openIndex, setOpenIndex] = useState(-1);
@@ -105,7 +380,7 @@ const Services = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto mt-10 bg-[#E9E4DC] p-6">
+    <div className=" mx-auto  bg-[#E9E4DC] p-6">
       <h1 className="text-3xl lg:text-5xl font-light tracking-wide mb-6">
         SERVICE &amp; PRICE
       </h1>
@@ -145,7 +420,7 @@ const Services = () => {
               return (
                 <div key={s.id} className="border-b border-black/30">
                   <div
-                    className="flex justify-between items-center py-4 cursor-pointer"
+                    className="flex justify-between items-center py-2 cursor-pointer"
                     role="button"
                     aria-expanded={isOpen}
                     aria-controls={`accordion-content-${idx}`}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import heroImage from "../assets/home/home.webp";
 
 const Home = () => {
@@ -6,7 +6,15 @@ const Home = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [readMoreModalOpen, setReadMoreModalOpen] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
-
+useEffect(() => {
+  if (isModalOpen || readMoreModalOpen) {
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+  } else {
+    document.body.style.position = "";
+    document.body.style.width = "";
+  }
+}, [isModalOpen, readMoreModalOpen]);
   const steps = [
     "Category",
     "Service",
@@ -97,7 +105,7 @@ const Home = () => {
       <img src={heroImage} alt="Hero" className="w-full h-full object-cover" />
 
       <div
-        className="fixed top-[20rem] right-6 transform -translate-y-1/2 bg-[#a92924] rounded-sm -rotate-90 origin-right cursor-pointer"
+        className="fixed top-[20rem] right-6 transform -translate-y-1/2 z-50 bg-[#a92924] rounded-sm -rotate-90 origin-right cursor-pointer"
         onClick={handleButtonClick}
       >
         <h2 className="text-white text-xl px-4 py-3 pb-7 rounded-lg">
@@ -107,7 +115,8 @@ const Home = () => {
 
       {/* Main Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-opacity-50 flex items-center justify-center z-50 px-4">
+        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-[100] px-4">
+
           <div className="bg-white rounded-sm shadow-lg max-w-3xl w-full h-full max-h-[85vh] relative overflow-hidden">
 
             <button
